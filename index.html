@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<title>KOVO TOMANDL CNC s.r.o.</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- <meta name="description" content="Kovo Tomandl CNC" /> -->
+	
+	<!-- CSS -->
+	<!-- http://www.99lime.com/elements/ !-->
+	<!-- icons https://fontawesome.com/v3.2.1/icons/ -->
+	<link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+	<link rel="stylesheet" href="style.css" media="all" />
+	
+	
+	<!-- JAVASCRIPT -->	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- <script src="js/jquery-1.10.2.js"></script> -->
+	<script src="js/jquery.i18n.properties-1.0.9.js"> </script> <!-- jquery-i18n-properties -->
+	<script src="js/kickstart.js"></script> <!-- KICKSTART -->	
+	<!-- Google map -->
+	<!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"> </script>
+	<script type="text/javascript" src="js/google_map.js"> </script> -->
+	<!-- Mapy.cz -->
+	<script src="https://api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
+
+	<!-- Kovo -->
+	<script type="text/javascript" src="js/kovo_1.2.js"> </script>	
+	
+</head>
+<body><a id="up"></a>
+	
+	<div class="grid">
+			<!-- LOGO -->
+			<div class="col_12 center" style="margin-top:100px;">
+				<img class="tooltip" title="KOVO TOMANDL CNC s.r.o." src="logo.png" alt="KOVO TOMANDL CNC s.r.o."></img>
+			</div>			
+			
+			<!-- LANGUAGE ICONS -->
+			<div class="col_12 right" style="margin-bottom:0px">
+				<div id="language">
+					<a href=# style="?margin-left:2px"><img class="tooltip current_lang" title="Čestina" src="icons/cz_flag.png" alt="cs"></a>
+					<a href=# style="?margin-left:2px"><img class="tooltip" title="Deutsch" src="icons/de_flag.png" alt="de"></a>
+					<!-- <a href=# style="?margin-left:2px"><img class="tooltip" title="English" src="icons/gb_flag.png" alt="en"></a> -->
+				</div>
+			</div>
+			
+			<!-- MENU -->
+			<div class="col_12">
+				<ul class="menu">
+					<li class="current"><a href="#" id="home"><i class="icon-home"></i> <span>O nás</span></a></li>
+					<li><a href="#" id="machine_equipment"><i class="icon-cog"></i> <span>Strojní vybavení</span></a></li>
+					<!-- <li><a href="#" id="career"><i class="icon-star"></i> Kariéra</a></li> -->
+					<li><a href="#" id="products"><i class="icon-wrench"></i> <span>Výrobky</span></a></li>
+					<li><a href="#" id="history"><i class="icon-book"></i> <span>Historie</span></a></li>
+					<li><a href="#" id="contact"><i class="icon-phone"></i> <span class="con">Kontakt</span></a></li>
+				</ul>					
+			</div>
+			
+
+			<!-- CONTENT -->			
+			<div class="col_12" style="padding:15px">
+				
+				<div id="loader" style="padding:100px" class="center"><img class="center" src="icons/page_loader.gif"></img></div>
+				<div id="content">						
+							
+				</div>
+			</div>
+
+		<!-- FOOTER -->
+		<div class="col_12">
+		<footer>			
+			<div class="clear"></div>		
+			<div id="footer">
+				<script>					
+					jQuery(document).ready(function(){
+						var currentYear = (new Date).getFullYear();
+						jQuery(".year").html(currentYear);
+					});
+				</script>
+				© <span class="year">2018</span> KOVO TOMANDL CNC s.r.o., Webmaster/Fotografie: <a href="mailto:mickmag%40seznam.cz">Michal Bokr</a>, Fotografie: <a href="mailto:jakub%40mojzis.org">Jakub Mojžíš</a>
+				<a name="link-top"></a>
+
+				<a id="link-top" href=""><i class="icon-double-angle-up icon-large"></i></a>
+			</div>
+		</footer>
+		</div>
+	</div> <!-- END GRID -->
+</body>
+</html>

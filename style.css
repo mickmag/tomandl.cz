@@ -1,0 +1,143 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	style.css
+
+*/
+
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+/* @import url(http://fonts.googleapis.com/css?family=Arimo:400,700); */
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: "Arimo", arial, verdana, sans-serif;
+font-weight:normal;
+}
+
+thead th,
+tbody th{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+.menu {
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+
+
+blockquote{
+font-family: "Arimo", arial, verdana, sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0 0 0 0;
+color:#000;
+background:#efefef url(css/img/gray_jean.png);
+font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
+text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+}
+
+/* #wrap{
+width:100%;
+background:#fff;
+margin:30px auto 30px auto;
+padding:0 2%;
+border:1px solid #ccc;
+} */
+
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+}
+	#link-top{
+	/* display:none; */
+	float:right;
+    color:#666;
+    text-decoration:none;
+    display: inline-block;
+    padding:5px 10px;
+    background:#e5e5e5;
+    line-height:100%;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+	}
+
+/*---------------------------------
+	MY STYLES
+-----------------------------------*/
+
+/* right grid ??? */
+.grid {
+	/* max-width:920px; */
+}
+
+/* to display google map correctly */
+#map_canvas img{
+	max-width:none
+}
+
+
+#language img {
+opacity:0.5;
+filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+	#language img:hover
+	{
+	opacity:1.0;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	}
+
+#language .current_lang {
+	opacity:1.0;
+	filter:alpha(opacity=100); 
+	cursor: default;
+}
+
+.gallery  a{
+	margin-top:25px;
+	margin-bottom:25px;
+} 
+
+.justify {
+	text-align:justify;
+}
+
+.list {
+	padding-left: 20px;
+}
+	
+.menu  li a{
+/* color: #000; */
+/* font-family: "Arimo", arial, verdana, sans-serif; */
+}
+
+.width100 {
+	width: 100% !important;
+}
+
