@@ -256,7 +256,7 @@
 	function setMsg(selector, msg_prefix) {
 		$(selector).each(function(index, value) {
 			var msg = msg_prefix + index;
-			$(this).text($_(msg));
+			$(this).html($_(msg));
 		});
 	}
 	
