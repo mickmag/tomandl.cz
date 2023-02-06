@@ -188,6 +188,30 @@
 		updateProducts();
 		updateHistory();
 		updateContact();
+		if (page_name == page.machine_equipment) {
+			attachVideoClick();
+		}
+	}
+
+	function attachVideoClick() {
+		$("#nakamura_video").click(function() {
+			$.fancybox({
+				'padding'		: 0,
+				'autoScale'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none',
+				'title'			: this.title,
+				'width'			: 889,
+				'height'		: 500,
+				'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+				'type'			: 'swf',
+				'swf'			: {
+				   	 'wmode'		: 'transparent',
+					'allowfullscreen'	: 'true'
+				}
+			});
+			return false;
+		});
 	}
 	
 	function updateMenu() {
@@ -218,6 +242,8 @@
 		$('#kiwa').html($_('msg_kiwa'));
 		
 		$('#lathe_centers_title').html($_('msg_lathe_centers_title'));
+		$('#nakamura_tome_title').html($_('msg_nakamura_tome_title'));
+		$('#nakamura_tome').html($_('msg_nakamura_tome'));
 		$('#mazak_hqr').html($_('msg_mazak_hqr'));
 		$('#pasova_pila_title').html($_('msg_pasova_pila_title'));
 		$('#pasova_pila').html($_('msg_pasova_pila'));		
@@ -259,4 +285,4 @@
 			$(this).html($_(msg));
 		});
 	}
-	
+
